@@ -9,7 +9,7 @@ const crearproducto = (nombre, precio, descripcion, imagen, categoria, id) => {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ nombre, precio, descripcion, imagen, categoria, id: uuid.v4() }),
+    body: JSON.stringify({ nombre, precio, descripcion, imagen, categoria, id, id: uuid.v4() }),
   });
 };
 

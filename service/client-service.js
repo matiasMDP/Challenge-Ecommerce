@@ -1,7 +1,7 @@
 import { user } from "../app.js";
 
 const obtenerProductos = () => {
-	return fetch("https://orac-e-commerce-project.herokuapp.com/productos").then(
+	return fetch("http://localhost:3000/productos").then(
 		(res) => res.json()
 	);
 };

@@ -50,7 +50,7 @@
 		<link rel="stylesheet" href="css/about/about-contact-form-btn.css" />
 		<link rel="stylesheet" href="css/footer.css" />
 
-		<title>Alura Geek E-Commerce</title>
+		<title>Alura Geek E-Commerce Editar</title>
  	</head>
 	<body>
 		<!-- navbar -->
@@ -75,7 +75,7 @@
 		<main>
 		<article class="add__product">
 			<h1 class="add__product__title">Agregar nuevo producto</h1>
-			<form action="post" id="add__product__form" class="add__product__form" data-form>
+			<form action="add-products.html" id="add__product__form" class="add__product__form" data-form>
 				<div class="add__product__file">
 					<label for="img__add" class="add__product_text"><img src="assets/images/addicon.svg"
 							alt="añadir icono" class="add__icon" />
@@ -147,11 +147,8 @@
 		<footer>
 			<h2 class="footer__text">Desarrollado por Matias Glorioso 2022</h2>
 		</footer>
+		<script type="module" src="./service/actualizar.controller.js"></script>
 		<script type="module" src="app.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
-		integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 		<script type="module" src="service/add-product-form.js"></script>
 	</body>
 </html>
