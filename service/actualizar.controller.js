@@ -7,7 +7,7 @@ const obtenerInformacion = async () => {
   const id = url.searchParams.get("id");
 
   if (id === null) {
-    window.location.href = "/screens/error.html";
+    window.location.href = "/error.html";
   }
 
   const nombre = document.querySelector("[data-nombre]");
@@ -42,6 +42,6 @@ formulario.addEventListener("submit", (evento) => {
   const precio = document.querySelector("[data-precio]").value;
   const descripcion = document.querySelector("[data-descripcion]").value;
   productoServices.actualizarProducto(nombre, precio, descripcion, id).then(() => {
-    window.location.href = "/screens/edicion_concluida.html";
+    window.location.href = "/lista_productos.html";
   });
 });

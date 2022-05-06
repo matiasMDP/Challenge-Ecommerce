@@ -85,7 +85,7 @@ addProductForm.addEventListener("submit", (e) => {
 	const formValues = Object.values(validateAddForm());
 	const valid = formValues.findIndex((value) => value === false);
 	if (valid == -1) {
-		if (productId) {
+		if (id) {
 			actualizarProducto(
 				editProduct[0].nombre,
 				editProduct[0].precio,
@@ -118,7 +118,7 @@ const validateAddForm = () => {
 	const inputDescripcion = document.getElementById(
 		"product__description"
 	).value;
-	const inputCategoria = document.getElementById("categoria").value;
+	const inputCategoria = document.getElementById("id").value;
 	if (editProduct[0]) {
 		editProduct[0].categoria = inputCategoria;
 	} else {
@@ -234,7 +234,7 @@ if (url.searchParams.get("id")) {
 
 function actualizarProducto(nombre, precio, descripcion, imagen, categoria) {
 	return fetch(
-		`https://http://localhost:3000/${productId}`,
+		`https://http://localhost:3000/${id}`,
 		{
 			method: "PUT",
 			headers: {

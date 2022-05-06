@@ -74,48 +74,34 @@
 			<!-- add products -->
 		<main>
 		<article class="add__product">
-			<h1 class="add__product__title">Agregar nuevo producto</h1>
-			<form action="add-products.html" id="add__product__form" class="add__product__form" data-form>
-				<div class="add__product__file">
-					<label for="img__add" class="add__product_text"><img src="assets/images/addicon.svg"
-							alt="añadir icono" class="add__icon" />
-						Agregar una imagen para el producto</label>
-
-					<input type="file" name="imagen" id="img__add" class="img__add" accept=".jpg,.png" />
-				</div>
-				<div class="add__product__file--desktop">
-					<div id="add__product__drop" class="add__product__drop">
-						<img class="add__icon--desktop" src="assets/images/addicon-desktop.svg" alt="" />
-						<p>Arrastre para agregar una imagen del producto</p>
+			<h1 class="card__title">Editar</h1>
+				<form action="#" class="flex flex--column">
+					<div class="input-container">
+					   <input name="nombre" id="nombre" class="input" type="text" placeholder="nombre" required data-nombre/>
+					   <label class="input-label" for="nombre">Nombre</label>
+						  <span class="input-menssage-error">Este campo es requerido</span>
 					</div>
-					<p class="o__text">O</p>
-					<div class="add__product_text__container">
-						<label for="img__add--desktop" class="add__product_text--desktop">Busque en su
-							dispositivo</label>
-						<input type="file" name="imagen" id="img__add--desktop" class="img__add--desktop"
-							name="fileinput"/>
+					<div class="input-container">
+					   <input name="precio" id="precio" class="input" type="text" placeholder="precio" required data-precio/>
+					   <label class="input-label" for="precio">Precio</label>
+					   <span class="input-menssage-error">Este campo es requerido</span>
 					</div>
-				</div>
-				<span class="addproduct__error--msj"></span>
-				<input type="text" name="nombre" id="add__input__nombre" class="add__product__input"
-					placeholder="Nombre del producto" data-nombre/>
-				<span class="addproduct__error--msj"></span>
-				<input type="number" name="precio" id="add__input__precio" class="add__product__input"
-					placeholder="Precio del Producto" data-precio />
-				<span class="addproduct__error--msj"></span>
-				<textarea name="descripcion" id="product__description" cols="30" rows="10"
-					placeholder="Descripcion del producto" data-descripcion></textarea>
-				<span class="addproduct__error--msj"></span>
-				<div class="product__category__input">
-					<label for="categoria" class="categoria__label">Categoria</label>
-					<select name="categoria" id="categoria" form="add__product__form" class="input__select__categoria" data-categoria>
-						<option value="Consolas">Consolas</option>
-						<option value="StarWars">StarWars</option>
-						<option value="Diversos">Diversos</option>
-					</select>
-				</div>
-				<input type="submit" class="add__product__submitbtn" value="Agregar producto" />
-			</form>
+					<div class="input-container">
+					   <input name="descripcion" id="descripcion" class="input-descripcion" placeholder="Descripcion" pattern="[\s\S]{10,150}" maxlength="150" title="Maximo 120 caracteres" required data-descripcion/>
+					   <label class="input-label" for="descripcion">descripcion</label>
+					   <span class="input-menssage-error">Este campo es requerido</span>
+					</div>
+					<div class="product__category__input">
+						<label for="categoria" class="categoria__label">Categoria</label>
+						<select name="categoria" id="categoria" form="add__product__form" class="input__select__categoria" data-categoria>
+							<option value="Consolas">Consolas</option>
+							<option value="StarWars">StarWars</option>
+							<option value="Diversos">Diversos</option>
+						</select>
+					</div>	
+					<input type="submit" class="simple-button simple-button--edit" value="Editar"/>
+   
+				</form>
 		</article>
 		</main>
 
@@ -147,8 +133,12 @@
 		<footer>
 			<h2 class="footer__text">Desarrollado por Matias Glorioso 2022</h2>
 		</footer>
-		<script type="module" src="./service/actualizar.controller.js"></script>
-		<script type="module" src="app.js"></script>
-		<script type="module" src="service/add-product-form.js"></script>
+		<script type="module" src="./app.js"></script>
+		<script type="module" src="./service/producto-service.js"></script>
+		<script type="module" src="./controllers/all-products.js"></script>
+		<script type="module" src="./service/add-product-form.js"></script>
+		<script type="module" src="./controllers/producto.controller.js"></script>
+
+
 	</body>
 </html>
