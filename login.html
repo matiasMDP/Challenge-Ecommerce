@@ -81,6 +81,7 @@
 		</header>
 
 		<!-- login -->
+<<<<<<< HEAD
 		<section class="login">
 			<h1 class="login__text">Iniciar Sesion</h1>
 			<form action="" id="login__form" class="login__form">
@@ -107,8 +108,30 @@
 				<button type="submit" class="login__form__btn" data-submit>
 					Entrar
 				</button>
+=======
+		<main class="login-principal">
+			<form class="login" action="../index.html" id="formulario-login">
+				<legend class="login__legend formulario__legend">Iniciar Sesión</legend>
+				<div class="login__componentes formulario__componentes">
+					<label class="login__label formulario__label" for="correo" tabindex="0">Correo Electrónico:</label>
+					<input class="formulario__campo formulario__campoEstilo" id="correo" type="email"
+						placeholder="Escriba su correo electrónico"
+						title="No debe estar en blanco o vacío, debe estar en formato correo@dominio.com"
+						pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+[.](?:[a-zA-Z0-9-]+)([.][a-z]{2,4})?$"
+						required data-campo="correo">
+					<span class="formulario__span--error" tabindex="0">Error</span>
+				</div>
+				<div class="login__componentes formulario__componentes">
+					<label class="login__label formulario__label" for="password">Contraseña:</label>
+					<input class="formulario__campo formulario__campoEstilo" id="password" type="password"
+						placeholder="Escriba su contraseña" title="El campo contraseña no debe estar en blanco o vacío"
+						required data-campo="password">
+					<span class="formulario__span--error" tabindex="0">Error</span>
+				</div>
+				<input class="login__boton boton--secundario" id="btn-login" type="submit" value="Entrar" tabindex="0">
+>>>>>>> 32931b2f722d234745e31690644d9ab78980bde7
 			</form>
-		</section>
+		</main>
 		<!-- form -->
 		<article class="about">
 			<section class="about__text">
@@ -158,7 +181,17 @@
 		<footer>
 			<h2 class="footer__text">Desarrollado por Matias Glorioso 2022</h2>
 		</footer>
+<<<<<<< HEAD
 		<script type="module" src="app.js"></script>
 		<script type="module" src="./service/registro.controller.js"></script>
+=======
+		<script type="module" src="./app.js"></script>
+		<script type="module" src="./service/login.js"></script>
+		<script type="module" src="./service/validaciones.js"></script>
+		<script type="module" src="./service/habilitarBoton.js"></script>
+		<script type="module" src="./service/producto-service.js"></script>
+
+
+>>>>>>> 32931b2f722d234745e31690644d9ab78980bde7
 	</body>
 </html>
