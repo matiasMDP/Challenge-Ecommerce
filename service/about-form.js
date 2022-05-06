@@ -10,7 +10,7 @@ aboutForm.addEventListener("submit", (e) => {
 });
 
 const validate = () => {
-	let nombre = document.querySelector("[data-nombre]").value;
+	let nombre = document.querySelector("[data-nombres]").value;
 	const mensaje = document.querySelector("[data-mensaje]").value;
 	let errorInputs = document.querySelectorAll(".about__error--msj");
 

@@ -125,7 +125,8 @@ window.addEventListener("DOMContentLoaded", async () => {
 					button: "Ok!",
 				});
 			} else {
-				window.location.href = `add-products.html?id=${productId}`;
+				window.location.href = `add-products.html?
+				id=${productId}`;
 				clientControllers.editarProducto(productId);
 			}
 		})

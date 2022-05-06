@@ -23,7 +23,7 @@ loginForm.addEventListener("submit", (e) => {
 
 const validarForm = async () => {
 	const emailInput = document.querySelector("[data-email]");
-	const passwordInput = document.querySelector("[data-password]");
+	const passwordInput = document.querySelector("[data-correo]");
 
 	const errorMsjOutput = document.querySelectorAll(".error--msj");
 

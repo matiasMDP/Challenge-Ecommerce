@@ -191,7 +191,7 @@ const validateAddForm = () => {
 };
 
 const enviarDatos = async () => {
-	return fetch("https://orac-e-commerce-project.herokuapp.com/productos", {
+	return fetch("http://localhost:3000/productos", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
@@ -234,7 +234,7 @@ if (url.searchParams.get("id")) {
 
 function actualizarProducto(nombre, precio, descripcion, imagen, categoria) {
 	return fetch(
-		`https://orac-e-commerce-project.herokuapp.com/productos/${productId}`,
+		`https://http://localhost:3000/${productId}`,
 		{
 			method: "PUT",
 			headers: {
