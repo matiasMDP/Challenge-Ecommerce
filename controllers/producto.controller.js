@@ -15,11 +15,8 @@ const crearNuevaLinea = (nombre, precio, descripcion, id) => {
       <ul class="table__button-control">
         <li>
           <a
-<<<<<<< HEAD
-            href="./editar_producto.html?id=${id}"
-=======
+ 
             href="../editar_producto.html?id=${id}"
->>>>>>> 32931b2f722d234745e31690644d9ab78980bde7
             class="simple-button simple-button--edit"> 
             Editar
           </a>

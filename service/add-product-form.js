@@ -234,11 +234,8 @@ if (url.searchParams.get("id")) {
 
 function actualizarProducto(nombre, precio, descripcion, imagen, categoria) {
 	return fetch(
-<<<<<<< HEAD
-		`https://http://localhost:3000/${productId}`,
-=======
+
 		`https://http://localhost:3000/${id}`,
->>>>>>> 32931b2f722d234745e31690644d9ab78980bde7
 		{
 			method: "PUT",
 			headers: {

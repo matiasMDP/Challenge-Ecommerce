@@ -4,7 +4,7 @@ const listaproductos = () =>
   /**atencion con el comportamineto del id que deje sino borrar y ojo falta descripcion */
 
 const crearproducto = (nombre, precio, descripcion, imagen, categoria, id) => {
-  return fetch("http://localhost:3000/perfil", {
+  return fetch("http://localhost:3000/pproducto", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

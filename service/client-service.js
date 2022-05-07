@@ -6,11 +6,11 @@ const obtenerProductos = () => {
 	);
 };
 
-const obtenerCertificados = () => {
+function obtenerCertificados() {
 	return fetch(
-		"http://localhost:3000/perfil"
+		"http://localhost:3000/productos"
 	).then((res) => res.json());
-};
+}
 
 const viewAllProd = document.querySelectorAll(".allPrdBtn");
 viewAllProd.forEach((btn) =>
@@ -27,7 +27,7 @@ viewProductBtn.forEach((btn) => {
 	btn.addEventListener("click", (e) => {
 		e.preventDefault();
 		const productId = e.target.id;
-		window.location.href = `detail.html?id=${productId}`;
+		window.location.href = `detail.html?id=${Id}`;
 	});
 });
 
